@@ -1,0 +1,13 @@
+.section_line {
+  color: grey;
+  font-size: 1rem;
+  width: 40%;
+  transform: translateY(5rem);
+  opacity: 0;
+  transition: 1500ms;
+}
+
+.section_line.show {
+  transform: translateY(0);
+  opacity: 1;
+}
