@@ -1,0 +1,60 @@
+.specials_cont {
+  width: 65%;
+  padding: 2rem;
+  border: 1px solid grey;
+  border-radius: 16px;
+  position: relative;
+  margin-bottom: 2rem;
+  transform: translateY(5rem);
+  opacity: 0;
+  transition: 1500ms;
+}
+
+.specials_cont.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.specials_cont:hover {
+  border: 1px solid rgb(21, 207, 129);
+  color: rgb(21, 207, 129);
+}
+
+.specials_cont h3 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.sp_details {
+  margin: 0;
+  margin-bottom: 1.2rem;
+  color: grey;
+  font-size: 0.9rem;
+  width: 70%;
+}
+
+.sp_link {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.sp_link:hover {
+  color: rgb(21, 207, 129);
+  cursor: pointer;
+}
+
+.sp_icon__cont {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.sp_icon__cont img {
+  height: 100%;
+  width: 100%;
+}
+.sp_icon__cont img:hover {
+  fill: rgb(21, 207, 129);
+}
