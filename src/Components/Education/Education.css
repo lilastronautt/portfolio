@@ -1,0 +1,19 @@
+.timeline_cont {
+  width: 40%;
+  position: relative;
+}
+
+.timeline {
+  width: 1px;
+  height: 27rem;
+  background: rgb(128, 128, 128, 0.4);
+  position: relative;
+}
+
+.timeline_details_cont {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  color: grey;
+}

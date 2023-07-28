@@ -38,14 +38,17 @@
 .sidesec_img__cont {
   height: 15rem;
   margin: 2rem 0;
+  background-image: url("../../assets/amaan.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.sidesec_img__cont img {
+/* .sidesec_img__cont img {
   height: 100%;
   width: 100%;
   background: black;
   border-radius: 12px;
-}
+} */
 
 .sidesec_icon__cont div {
   height: 2.4rem;
