@@ -2,6 +2,7 @@ import SideSection from "../Components/SideSection/SideSection";
 import Introduce from "../Components/Introduce/Introduce";
 import About from "../Components/About/About";
 import Education from "../Components/Education/Education";
+import Specialization from "../Components/Specialization/Specialization";
 import Card from "../Components/lib/Card/Card";
 
 const Pages = () => {
@@ -19,7 +20,7 @@ const Pages = () => {
           <Education />
         </div>
         <div style={{ marginBottom: "8rem" }}>
-          <About className="show" />
+          <Specialization />
         </div>
         <div style={{ marginBottom: "8rem" }}>
           <About className="show" />
