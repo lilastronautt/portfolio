@@ -1,0 +1,84 @@
+.sidesec_cont {
+  color: white;
+  width: 20vw;
+  text-align: center;
+  border: 1px solid grey;
+  padding: 1.5rem;
+  border-radius: 12px;
+  height: 90vh;
+
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+}
+
+.sidesec_cont p,
+.sidesec_cont h2 {
+  margin: 0;
+}
+
+.sidesec_details {
+  font-size: 1.2rem;
+}
+
+.sidesec_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidesec_icon__cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 3rem auto;
+}
+
+.sidesec_img__cont {
+  height: 15rem;
+  margin: 2rem 0;
+}
+
+.sidesec_img__cont img {
+  height: 100%;
+  width: 100%;
+  background: black;
+  border-radius: 12px;
+}
+
+.sidesec_icon__cont div {
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  border: 2px solid grey;
+  padding: 0.5rem;
+}
+
+.sidesec_icon__cont div:hover {
+  background: #15cf81;
+  cursor: pointer;
+}
+
+.sidesec_icon__cont img {
+  width: 100%;
+  height: 100%;
+}
+
+.sidesec_cont button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  color: black;
+  background-color: #15cf81;
+  border-radius: 12px;
+  border: 2px solid #15cf81;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+.sidesec_cont button:hover {
+  background: transparent;
+  color: #15cf81;
+}

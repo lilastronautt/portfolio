@@ -1,0 +1,16 @@
+.introduce_icon {
+  height: 2rem;
+  width: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid grey;
+  font-size: 0.7rem;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.introduce_icon img {
+  width: 2rem;
+  height: 1.3rem;
+}

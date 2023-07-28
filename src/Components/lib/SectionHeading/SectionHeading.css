@@ -1,0 +1,23 @@
+.sect_heading {
+  width: 50%;
+  margin: 2rem 0;
+  opacity: 0;
+  transform: translateX(5rem);
+  transition: 1500ms;
+}
+
+.sect_heading.show {
+  /* animation: animateHeading 1200ms 0.2s ease-in; */
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* @keyframes animateHeading {
+  0% {
+    transform: translateX(5rem);
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+} */
