@@ -12,9 +12,7 @@ const SideSection = () => {
         <h2>Amaan</h2>
         <p>Self Taught Devolper</p>
       </div>
-      <div className="sidesec_img__cont">
-        <img src={amaan}></img>
-      </div>
+      <div className="sidesec_img__cont"></div>
       <p className="sidesec_details">amaanmitadt@gmail.com</p>
       <p className="sidesec_details">Base in Pune, Maharashtra</p>
       <div className="sidesec_icon__cont">

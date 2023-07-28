@@ -1,0 +1,45 @@
+.timeline_detail_cont {
+  margin-bottom: 3rem;
+  width: 100%;
+  transform: translateX(5rem);
+  opacity: 0;
+  transition: 1500ms;
+}
+
+.timeline_detail_cont.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline_circle {
+  position: absolute;
+  left: -21px;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: grey;
+}
+
+.td_year {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.activeC {
+  color: #15cf81;
+}
+
+.activeB {
+  background: #15cf81;
+}
+
+.td_degree {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.td_institute {
+  width: 100%;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
