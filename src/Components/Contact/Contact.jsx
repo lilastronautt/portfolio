@@ -4,6 +4,7 @@ import SectionHeading from "../lib/SectionHeading/SectionHeading";
 import contact from "../../assets/contact.svg";
 import SectionParagraph from "../lib/SectionParagraph/SectionParagraph";
 import { useEffect, useState } from "react";
+import React from "react";
 
 const Contact = () => {
   useEffect(() => {
@@ -43,11 +44,11 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div id="contact">
       <SectionInfo name="CONTACT" path={contact} />
       <SectionHeading str="Contact me" size={1.8} />
       <SectionParagraph text="amaanmitadt@gmail.com" />
-      <form onSubmit={contactFormhandler} className="contact_form">
+      <form onSubmit={contactFormhandler} className="contact_form" >
         <div className="name_email__cont">
           <div>
             <label>Name *</label>
@@ -87,7 +88,7 @@ const Contact = () => {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 

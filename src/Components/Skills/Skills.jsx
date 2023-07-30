@@ -15,10 +15,11 @@ import sql from "../../assets/sql.svg";
 import ds from "../../assets/ds.svg";
 import algo from "../../assets/algo.svg";
 import SkillCont from "../lib/SkillCont/SkillCont";
+import React from "react";
 
 const Skills = () => {
   return (
-    <>
+    <div id="skills">
       <SectionInfo name="MY SKILLS" path={skills} />
       <SectionHeading str="My Advantages" size={1.8} />
       <div className="skills_container">
@@ -34,7 +35,7 @@ const Skills = () => {
         <SkillCont skillName="Data Structures" path={ds} />
         <SkillCont skillName="Algorihtms" path={algo} />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,10 @@
+.nav_icons_cont {
+  width: fit-content;
+  border: 1px solid grey;
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem
+}
+.nav_icons_cont:hover {
+  border: 1px solid #15cf81;
+}
