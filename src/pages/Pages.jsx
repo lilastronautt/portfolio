@@ -4,6 +4,7 @@ import About from "../Components/About/About";
 import Education from "../Components/Education/Education";
 import Specialization from "../Components/Specialization/Specialization";
 import Card from "../Components/lib/Card/Card";
+import Skills from "../Components/Skills/Skills";
 
 const Pages = () => {
   return (
@@ -23,7 +24,7 @@ const Pages = () => {
           <Specialization />
         </div>
         <div style={{ marginBottom: "8rem" }}>
-          <About className="show" />
+          <Skills />
         </div>
         <div style={{ marginBottom: "8rem" }}>
           <About className="show" />

@@ -36,6 +36,7 @@
 .sp_link {
   color: white;
   font-size: 0.8rem;
+  margin: 0;
 }
 
 .sp_link:hover {
