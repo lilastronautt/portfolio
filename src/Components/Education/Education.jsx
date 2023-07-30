@@ -1,13 +1,13 @@
 import "./Education.css";
 import SectionInfo from "../lib/SectionInfo/SectionInfo";
 import SectionHeading from "../lib/SectionHeading/SectionHeading";
-import SectionParagraph from "../lib/SectionParagraph/SectionParagraph";
 import education from "../../assets/education.svg";
 import TimelineDetail from "../lib/TimelineDetail/TimelineDetail";
+import React from "react";
 
 const Education = () => {
   return (
-    <>
+    <div id="education">
       <SectionInfo name="EDUCATION" path={education} />
       <SectionHeading str="Education & Experience" size={1.8} />
       <div className="timeline_cont">
@@ -32,7 +32,7 @@ const Education = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

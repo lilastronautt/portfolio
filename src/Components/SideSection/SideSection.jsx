@@ -10,7 +10,7 @@ const SideSection = () => {
     <div className="sidesec_cont">
       <div className="sidesec_heading">
         <h2>Amaan</h2>
-        <p>Self Taught Devolper</p>
+        <p>Self Taught Developer</p>
       </div>
       <div className="sidesec_img__cont"></div>
       <p className="sidesec_details">amaanmitadt@gmail.com</p>

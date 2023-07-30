@@ -1,0 +1,32 @@
+.nav_icon_cont {
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.nav_icon_cont img {
+  height: 100%;
+  width: 100%;
+  color: grey;
+}
+
+.nav_icon_cont img:hover {
+  cursor: pointer;
+}
+
+.nav_icon_info {
+  position: absolute;
+  top: 20%;
+  right: 75%;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+  background: grey;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  display: none;
+}
+
+.nav_icon_cont:hover .nav_icon_info {
+  display: block;
+}

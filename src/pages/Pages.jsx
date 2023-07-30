@@ -6,12 +6,17 @@ import Specialization from "../Components/Specialization/Specialization";
 import Card from "../Components/lib/Card/Card";
 import Skills from "../Components/Skills/Skills";
 import Contact from "../Components/Contact/Contact";
+import NavBar from "../Components/NavBar/NavBar";
+import "./Pages.css";
 
 const Pages = () => {
   return (
     <>
       <SideSection />
       <Card>
+        <div className="sidenav_cont">
+          <NavBar />
+        </div>
         <div style={{ marginBottom: "8rem" }}>
           <Introduce />
         </div>

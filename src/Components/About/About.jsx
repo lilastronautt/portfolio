@@ -7,7 +7,7 @@ import SectionParagraph from "../lib/SectionParagraph/SectionParagraph";
 const About = ({ className }) => {
   const str = "Every great design begin with a even better story";
   return (
-    <>
+    <div id="about">
       <SectionInfo name="ABOUT" path={about} />
       <SectionHeading str={str} size={1.9} className={className} />
       <SectionParagraph
@@ -17,7 +17,7 @@ const About = ({ className }) => {
         building efficient and elegant solutions, I strive to create impactful
         web experiences. Let's collaborate and bring ideas to life!"
       />
-    </>
+    </div>
   );
 };
 

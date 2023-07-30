@@ -6,10 +6,11 @@ import SectionHeading from "../lib/SectionHeading/SectionHeading";
 import SpecialContainer from "../lib/SpecialContainer/SpecialContainer";
 import coding from "../../assets/coding.svg";
 import leetcode2 from "../../assets/leetcode2.svg";
+import React from "react";
 
 const Specialization = () => {
   return (
-    <>
+    <div id="specialization">
       <SectionInfo name="SPECIALIZATION" path={services} />
       <SectionHeading str="My Specializations" size={1.8} />
       <SpecialContainer
@@ -24,7 +25,7 @@ const Specialization = () => {
         linkName="LEETCODE"
         path={leetcode2}
       />
-    </>
+    </div>
   );
 };
 
