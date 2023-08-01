@@ -1,0 +1,9 @@
+#projects {
+  scroll-margin-top: 2rem;
+}
+
+.projects_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

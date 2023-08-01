@@ -7,6 +7,7 @@ import Card from "../Components/lib/Card/Card";
 import Skills from "../Components/Skills/Skills";
 import Contact from "../Components/Contact/Contact";
 import NavBar from "../Components/NavBar/NavBar";
+import ProjectsSection from "../Components/ProjectsSection/ProjectsSection";
 import "./Pages.css";
 
 const Pages = () => {
@@ -31,6 +32,9 @@ const Pages = () => {
         </div>
         <div style={{ marginBottom: "8rem" }}>
           <Skills />
+        </div>
+        <div style={{ marginBottom: "8rem" }}>
+          <ProjectsSection />
         </div>
         <div style={{ marginBottom: "8rem" }}>
           <Contact />
