@@ -48,7 +48,7 @@ const Contact = () => {
       <SectionInfo name="CONTACT" path={contact} />
       <SectionHeading str="Contact me" size={1.8} />
       <SectionParagraph text="amaanmitadt@gmail.com" />
-      <form onSubmit={contactFormhandler} className="contact_form" >
+      <form onSubmit={contactFormhandler} className="contact_form">
         <div className="name_email__cont">
           <div>
             <label>Name *</label>
@@ -82,11 +82,10 @@ const Contact = () => {
             value={inputs.msg}
           />
         </div>
-        <div className="form_actions">
-          <button type="submit" className="form_button">
-            SEND MESSAGE
-          </button>
-        </div>
+
+        <button type="submit" className="form_button">
+          SEND MESSAGE
+        </button>
       </form>
     </div>
   );
