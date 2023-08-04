@@ -20,7 +20,13 @@
   color: rgb(21, 207, 129);
 }
 
-.specials_cont h3 {
+.sp_head-dark {
+  color: white;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.sp_head-light {
+  color: black;
   margin: 0;
   margin-bottom: 0.5rem;
 }
@@ -33,13 +39,20 @@
   width: 70%;
 }
 
-.sp_link {
+.sp_link-dark {
   color: white;
   font-size: 0.8rem;
   margin: 0;
 }
 
-.sp_link:hover {
+.sp_link-light {
+  color: black;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.sp_link-dark:hover,
+.sp_link-light:hover {
   color: rgb(21, 207, 129);
   cursor: pointer;
 }

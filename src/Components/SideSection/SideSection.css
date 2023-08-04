@@ -6,7 +6,6 @@
   padding: 1.5rem;
   border-radius: 12px;
   height: 90vh;
-
   position: fixed;
   top: 2rem;
   left: 2rem;
@@ -17,14 +16,28 @@
   margin: 0;
 }
 
-.sidesec_details {
+.sidesec_details-dark {
   font-size: 1.2rem;
+  color: white;
 }
 
-.sidesec_heading {
+.sidesec_details-light {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.sidesec_heading-dark {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
+}
+
+.sidesec_heading-light {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
 }
 
 .sidesec_icon__cont {
@@ -32,23 +45,21 @@
   justify-content: space-around;
   align-items: center;
   width: 70%;
-  margin: 3rem auto;
+  margin: 2rem auto;
 }
 
 .sidesec_img__cont {
-  height: 15rem;
+  height: 16rem;
   margin: 2rem 0;
-  background-image: url("../../assets/amaan.jpeg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  /* background-image: url("../../assets/amaan.jpeg"); */
 }
 
-/* .sidesec_img__cont img {
+.sidesec_img__cont img {
   height: 100%;
-  width: 100%;
+  width: fit-content;
   background: black;
   border-radius: 12px;
-} */
+}
 
 .sidesec_icon__cont div {
   height: 2.4rem;
@@ -68,7 +79,7 @@
   height: 100%;
 }
 
-.sidesec_cont button {
+.sidesec_button-dark {
   margin-top: 1rem;
   width: 100%;
   padding: 0.5rem 0;
@@ -77,11 +88,26 @@
   border-radius: 12px;
   border: 2px solid #15cf81;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+.sidesec_button-dark:hover {
+  background: transparent;
+  color: #15cf81;
+}
 
+.sidesec_button-light {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  color: white;
+  background-color: #15cf81;
+  border-radius: 12px;
+  border: 2px solid #15cf81;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
-.sidesec_cont button:hover {
+.sidesec_button-light:hover {
   background: transparent;
   color: #15cf81;
 }

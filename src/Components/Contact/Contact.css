@@ -15,7 +15,6 @@
   transform: translateY(0);
 }
 
-.contact_form label,
 .contact_form input,
 .contact_form textarea {
   display: block;
@@ -23,8 +22,19 @@
   background-color: transparent !important;
 }
 
-.contact_form input,
-.contact_form textarea {
+.form_label-light {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+
+.form_label-dark {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.form_input-dark {
   border: none;
   border-bottom: 1px solid grey;
   color: white;
@@ -32,14 +42,29 @@
   font-size: 1.2rem;
 }
 
-.contact_form input:-webkit-autofill {
+.form_input-light {
+  border: none;
+  border-bottom: 1px solid rgb(173, 172, 172);
+  color: black;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.form_input-dark:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #1d1c1d inset !important;
   -webkit-text-fill-color: white !important;
 }
+.form_input-light:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: black !important;
+}
 
-.contact_form input:focus,
-.contact_form textarea:focus {
+.form_input-dark:focus {
   border-bottom: 1px solid white;
+}
+
+.form_input-light:focus {
+  border-bottom: 1px solid black;
 }
 
 .contact_form input:focus-visible,
@@ -59,11 +84,12 @@
 }
 
 .form_msg textarea {
+  font-family: "Inter", sans-serif;
   width: 100%;
   resize: none;
 }
 
-.form_button {
+.form_button-dark {
   border: 2px solid rgb(21, 207, 129);
   color: #1d1c1d;
   background-color: rgb(21, 207, 129);
@@ -71,9 +97,23 @@
   padding: 0.5rem 1rem;
   margin-top: 2rem;
 }
+.form_button-light {
+  border: 2px solid rgb(21, 207, 129);
+  color: white;
+  background-color: rgb(21, 207, 129);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+}
 
-.form_button:hover {
+.form_button-dark:hover {
   background: #1d1c1d;
+  color: rgb(21, 207, 129);
+  cursor: pointer;
+}
+
+.form_button-light:hover {
+  background: white;
   color: rgb(21, 207, 129);
   cursor: pointer;
 }

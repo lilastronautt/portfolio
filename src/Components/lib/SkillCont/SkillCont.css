@@ -20,6 +20,19 @@
   transform: translateX(0);
 }
 
+.skillname-dark {
+  color: white;
+}
+
+.skillname-light {
+  color: black;
+}
+
+.skillname-light:hover,
+.skillname-dark:hover {
+  color: rgb(21, 207, 129);
+}
+
 .skill_container:hover {
   color: rgb(21, 207, 129);
   border: 2px solid rgb(21, 207, 129);

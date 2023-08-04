@@ -3,10 +3,12 @@ import SectionInfo from "../lib/SectionInfo/SectionInfo";
 import SectionHeading from "../lib/SectionHeading/SectionHeading";
 import contact from "../../assets/contact.svg";
 import SectionParagraph from "../lib/SectionParagraph/SectionParagraph";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import React from "react";
+import themeContext from "../../store/store";
 
 const Contact = () => {
+  const ctx = useContext(themeContext);
   useEffect(() => {
     const div = document.querySelector(".contact_form");
     const observer = new IntersectionObserver((entries) => {
@@ -51,28 +53,40 @@ const Contact = () => {
       <form onSubmit={contactFormhandler} className="contact_form">
         <div className="name_email__cont">
           <div>
-            <label>Name *</label>
+            <label
+              className={ctx.dark ? "form_label-dark" : "form_label-light"}
+            >
+              Name *
+            </label>
             <input
               type="text"
               placeholder="Enter your name"
               required
               onChange={updName}
               value={inputs.name}
+              className={ctx.dark ? "form_input-dark" : "form_input-light"}
             />
           </div>
           <div>
-            <label>Email *</label>
+            <label
+              className={ctx.dark ? "form_label-dark" : "form_label-light"}
+            >
+              Email *
+            </label>
             <input
               type="email"
               placeholder="Enter your email"
               required
               onChange={updEmail}
               value={inputs.email}
+              className={ctx.dark ? "form_input-dark" : "form_input-light"}
             />
           </div>
         </div>
         <div className="form_msg">
-          <label>Message *</label>
+          <label className={ctx.dark ? "form_label-dark" : "form_label-light"}>
+            Message *
+          </label>
           <textarea
             rows="7"
             type="textarea,useState"
@@ -80,10 +94,14 @@ const Contact = () => {
             required
             onChange={updMsg}
             value={inputs.msg}
+            className={ctx.dark ? "form_input-dark" : "form_input-light"}
           />
         </div>
 
-        <button type="submit" className="form_button">
+        <button
+          type="submit"
+          className={ctx.dark ? "form_button-dark" : "form_button-light"}
+        >
           SEND MESSAGE
         </button>
       </form>

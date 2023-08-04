@@ -1,7 +1,9 @@
 import "./SectionHeading.css";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
+import themeContext from "../../../store/store";
 
 const SectionHeading = ({ size, str }) => {
+  const ctx = useContext(themeContext);
   useEffect(() => {
     const showAni = document.querySelectorAll(".sect_heading");
     const observer = new IntersectionObserver((entries) => {
@@ -25,7 +27,12 @@ const SectionHeading = ({ size, str }) => {
               );
             } else {
               return (
-                <span style={{ color: "white", fontSize: `${size}rem` }}>
+                <span
+                  style={{
+                    color: ctx.dark ? "white" : "black",
+                    fontSize: `${size}rem`,
+                  }}
+                >
                   {el}{" "}
                 </span>
               );
@@ -39,7 +46,12 @@ const SectionHeading = ({ size, str }) => {
               );
             } else {
               return (
-                <span style={{ color: "white", fontSize: `${size}rem` }}>
+                <span
+                  style={{
+                    color: ctx.dark ? "white" : "black",
+                    fontSize: `${size}rem`,
+                  }}
+                >
                   {el}{" "}
                 </span>
               );

@@ -5,13 +5,13 @@
   position: relative;
 }
 
-.nav_icon_cont img {
+.vn_svg {
   height: 100%;
   width: 100%;
   color: grey;
 }
 
-.nav_icon_cont img:hover {
+.vn_svg:hover {
   cursor: pointer;
 }
 

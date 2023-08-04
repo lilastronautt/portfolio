@@ -14,6 +14,7 @@ import nodejs from "../../assets/nodejs.svg";
 import sql from "../../assets/sql.svg";
 import ds from "../../assets/ds.svg";
 import algo from "../../assets/algo.svg";
+import php from "../../assets/php.png";
 import SkillCont from "../lib/SkillCont/SkillCont";
 import React from "react";
 
@@ -27,6 +28,7 @@ const Skills = () => {
         <SkillCont skillName="Javascript" path={js} />
         <SkillCont skillName="HTML5" path={html} />
         <SkillCont skillName="CSS" path={css} />
+        <SkillCont skillName="php" path={php} />
         <SkillCont skillName="MongoDb" path={mongodb} />
         <SkillCont skillName="express" path={express} />
         <SkillCont skillName="React" path={react1} />

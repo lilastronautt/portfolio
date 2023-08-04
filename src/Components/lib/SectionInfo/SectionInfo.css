@@ -10,7 +10,15 @@
   padding: 1rem;
 }
 
-.introduce_icon img {
+.svg {
   width: 2rem;
   height: 1.3rem;
+}
+
+.introduce_name-dark {
+  color: white;
+}
+
+.introduce_name-light {
+  color: black;
 }
