@@ -18,12 +18,14 @@ const Specialization = () => {
         details="i created websites using mern as side projects, currently working on mut adt hostel managemnt"
         linkName="GITHUB"
         path={coding}
+        link="https://github.com/lilastronautt"
       />
       <SpecialContainer
         head="DSA Solving/Problem Solving"
         details="I solve regularly solve questions on leetcode for better solving problems"
         linkName="LEETCODE"
         path={leetcode2}
+        link="https://leetcode.com/amaankhan786/"
       />
     </div>
   );

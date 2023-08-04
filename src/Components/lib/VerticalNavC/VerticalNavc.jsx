@@ -1,9 +1,28 @@
 import "./VerticalNavC.css";
 import { SvgLoader, SvgProxy } from "react-svgmt";
 import themeContext from "../../../store/store";
-import { useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 
 const VerticalNavC = ({ path, name, id }) => {
+  const [active, setActive] = useState(false);
+  useEffect(() => {
+    const _id = document.getElementById(id);
+    const observerC = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(true);
+            console.log("hii");
+          } else {
+            setActive(false);
+          }
+        });
+      },
+      { threshold: id == "projects" || id == "skills" ? 0.2 : 1 }
+    );
+    observerC.observe(_id);
+  }, []);
+
   const ctx = useContext(themeContext);
   const navClickHandler = () => {
     const section = document.getElementById(id);
@@ -13,7 +32,8 @@ const VerticalNavC = ({ path, name, id }) => {
     <div className="nav_icon_cont" onClick={navClickHandler}>
       <SvgLoader
         path={path}
-        fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
+        fill={active ? "#15cf81" : ctx.dark ? "white" : "rgba(0,0,0,1)"}
+        stroke="none"
         className="vn_svg"
       >
         <SvgProxy />

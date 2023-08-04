@@ -11,6 +11,19 @@ import { useContext } from "react";
 const SideSection = () => {
   const ctx = useContext(themeContext);
 
+  const onClickL = () => {
+    window.open("https://www.linkedin.com/in/lilastronaut/", "_blank");
+  };
+  const onClickT = () => {
+    window.open("https://twitter.com/amaankhan0555", "_blank");
+  };
+  const onClickLe = () => {
+    window.open("https://leetcode.com/amaankhan786/", "_blank");
+  };
+  const onClickG = () => {
+    window.open("https://github.com/lilastronautt", "_blank");
+  };
+
   return (
     <div className="sidesec_cont">
       <div
@@ -32,7 +45,7 @@ const SideSection = () => {
       >
         Base in Pune, Maharashtra
       </p>
-      <div className="sidesec_icon__cont">
+      <div className="sidesec_icon__cont" onClick={onClickT}>
         <div>
           <SvgLoader
             path={twitter}
@@ -42,7 +55,7 @@ const SideSection = () => {
             <SvgProxy />
           </SvgLoader>
         </div>
-        <div>
+        <div onClick={onClickL}>
           <SvgLoader
             path={linkedin}
             fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
@@ -52,7 +65,7 @@ const SideSection = () => {
             <SvgProxy />
           </SvgLoader>
         </div>
-        <div>
+        <div onClick={onClickLe}>
           <SvgLoader
             path={leetcode}
             fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
@@ -62,7 +75,7 @@ const SideSection = () => {
             <SvgProxy />
           </SvgLoader>
         </div>
-        <div>
+        <div onClick={onClickG}>
           <SvgLoader
             path={github}
             fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}

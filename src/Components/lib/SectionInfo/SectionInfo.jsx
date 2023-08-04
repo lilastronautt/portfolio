@@ -10,6 +10,7 @@ const SectionInfo = ({ path, name }) => {
       <SvgLoader
         path={path}
         fill={ctx.dark ? "grey" : "rgba(0,0,0,0.5)"}
+        stroke="none"
         className="svg"
       >
         <SvgProxy />
