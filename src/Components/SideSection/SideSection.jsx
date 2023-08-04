@@ -1,35 +1,82 @@
 import "./SideSection.css";
 import amaan from "../../assets/amaan.jpeg";
-import github from "../../assets/github.png";
+import github from "../../assets/github1.svg";
 import leetcode from "../../assets/leetcode.svg";
-import linkedin from "../../assets/linkedin.png";
-import twitter from "../../assets/twitter.png";
+import linkedin from "../../assets/linkedin.svg";
+import twitter from "../../assets/twitter.svg";
+import themeContext from "../../store/store";
+import { SvgLoader, SvgProxy } from "react-svgmt";
+import { useContext } from "react";
 
 const SideSection = () => {
+  const ctx = useContext(themeContext);
+
   return (
     <div className="sidesec_cont">
-      <div className="sidesec_heading">
+      <div
+        className={ctx.dark ? "sidesec_heading-dark" : "sidesec_heading-light"}
+      >
         <h2>Amaan</h2>
         <p>Self Taught Developer</p>
       </div>
-      <div className="sidesec_img__cont"></div>
-      <p className="sidesec_details">amaanmitadt@gmail.com</p>
-      <p className="sidesec_details">Base in Pune, Maharashtra</p>
+      <div className="sidesec_img__cont">
+        <img src={amaan} />
+      </div>
+      <p
+        className={ctx.dark ? "sidesec_details-dark" : "sidesec_details-light"}
+      >
+        amaanmitadt@gmail.com
+      </p>
+      <p
+        className={ctx.dark ? "sidesec_details-dark" : "sidesec_details-light"}
+      >
+        Base in Pune, Maharashtra
+      </p>
       <div className="sidesec_icon__cont">
         <div>
-          <img src={twitter}></img>
+          <SvgLoader
+            path={twitter}
+            fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
+            className="vn_svg"
+          >
+            <SvgProxy />
+          </SvgLoader>
         </div>
         <div>
-          <img src={linkedin}></img>
+          <SvgLoader
+            path={linkedin}
+            fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
+            stroke={ctx.dark ? "white" : "rgba(0,0,0,1)"}
+            className="vn_svg"
+          >
+            <SvgProxy />
+          </SvgLoader>
         </div>
         <div>
-          <img src={github}></img>
+          <SvgLoader
+            path={leetcode}
+            fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
+            stroke={ctx.dark ? "white" : "rgba(0,0,0,1)"}
+            className="vn_svg"
+          >
+            <SvgProxy />
+          </SvgLoader>
         </div>
         <div>
-          <img src={leetcode}></img>
+          <SvgLoader
+            path={github}
+            fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
+            className="vn_svg"
+          >
+            <SvgProxy />
+          </SvgLoader>
         </div>
       </div>
-      <button>Resume</button>
+      <button
+        className={ctx.dark ? "sidesec_button-dark" : "sidesec_button-light"}
+      >
+        Resume
+      </button>
     </div>
   );
 };

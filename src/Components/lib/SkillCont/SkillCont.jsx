@@ -1,7 +1,9 @@
 import "./SkillCont.css";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
+import themeContext from "../../../store/store";
 
 const SkillCont = ({ path, skillName }) => {
+  const ctx = useContext(themeContext);
   useEffect(() => {
     const divs = document.querySelectorAll(".skill_container");
     const observer = new IntersectionObserver((entries) => {
@@ -14,7 +16,9 @@ const SkillCont = ({ path, skillName }) => {
   return (
     <div className="skill_container">
       <img src={path}></img>
-      <div>{skillName}</div>
+      <div className={ctx.dark ? "skillname-dark" : "skillname-light"}>
+        {skillName}
+      </div>
     </div>
   );
 };
