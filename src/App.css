@@ -3,10 +3,6 @@
   height: 3rem;
   text-align: center;
   border-radius: 50%;
-  position: fixed;
-  right: 3rem;
-  top: 2rem;
-  z-index: 100;
 }
 
 .thememode_cont:hover {
@@ -45,9 +41,6 @@
 }
 
 .menu_cont {
-  position: fixed;
-  top: 1rem;
-  left: 2rem;
   width: 3rem;
   height: 3rem;
   display: none;
@@ -78,5 +71,54 @@
   }
   #backdrop {
     display: block;
+  }
+}
+
+.topnavbar_cont-dark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  background-color: rgba(29, 28, 29, 0.8);
+  display: none;
+}
+
+.topnavbar_cont-light {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  display: none;
+}
+
+@media (max-width: 60rem) {
+  .topnavbar_cont-dark,
+  .topnavbar_cont-light {
+    display: flex;
+  }
+}
+
+@media (min-width: 60rem) {
+  .topnavbar_cont-dark,
+  .topnavbar_cont-light {
+    position: static;
+    display: block;
+  }
+  .thememode_cont {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1002;
   }
 }

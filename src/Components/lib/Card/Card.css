@@ -5,6 +5,7 @@
   right: 0;
   top: 2rem;
   color: white;
+  z-index: 100;
 }
 
 @media (max-width: 75rem) {
