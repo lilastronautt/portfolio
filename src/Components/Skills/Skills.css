@@ -2,6 +2,12 @@
   scroll-margin-top: 2rem;
 }
 
+@media (max-width: 60rem) {
+  #skills {
+    scroll-margin-top: 5rem;
+  }
+}
+
 .skills_container {
   width: 65%;
   display: grid;

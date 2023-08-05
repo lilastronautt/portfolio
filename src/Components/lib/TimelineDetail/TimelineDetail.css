@@ -8,7 +8,7 @@
 
 @media (max-width: 60rem) {
   .timeline_detail_cont {
-    transform: translateX(1rem);
+    transform: translateX(0);
   }
 }
 

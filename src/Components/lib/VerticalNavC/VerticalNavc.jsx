@@ -12,13 +12,15 @@ const VerticalNavC = ({ path, name, id }) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActive(true);
-            console.log("hii");
           } else {
             setActive(false);
           }
         });
       },
-      { threshold: id == "projects" || id == "skills" ? 0.2 : 1 }
+      {
+        threshold:
+          id == "projects" || id == "skills" || id == "contact" ? 0.2 : 1,
+      }
     );
     observerC.observe(_id);
   }, []);

@@ -1,6 +1,11 @@
 #contact {
   scroll-margin-top: 2rem;
 }
+@media (max-width: 60rem) {
+  #contact {
+    scroll-margin-top: 5rem;
+  }
+}
 
 .contact_form {
   width: 60%;

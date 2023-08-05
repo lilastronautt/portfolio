@@ -1,0 +1,15 @@
+.mnc_msg-light {
+  color: grey;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+
+.mnc_msg-dark {
+  color: grey;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+
+.active {
+  color: #15cf81;
+}

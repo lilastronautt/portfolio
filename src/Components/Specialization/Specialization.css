@@ -1,3 +1,9 @@
 #specialization {
-    scroll-margin-top:2rem;
+  scroll-margin-top: 2rem;
+}
+
+@media (max-width: 60rem) {
+  #specialization {
+    scroll-margin-top: 5rem;
+  }
 }

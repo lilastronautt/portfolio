@@ -17,7 +17,7 @@
 
 @media (max-width: 60rem) {
   .skill_container {
-    transform: translateX(1rem);
+    transform: translateX(0);
   }
 }
 
