@@ -1,4 +1,4 @@
-import Pages from "./pages/pages";
+import Pages from "./Pages/Pages";
 import "./App.css";
 import themeContext from "./store/store";
 import { useEffect, useState, useContext } from "react";
