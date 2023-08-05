@@ -6,7 +6,7 @@ import menu1 from "./assets/menu1.svg";
 import menu2 from "./assets/menu2.svg";
 import { SvgLoader, SvgProxy } from "react-svgmt";
 import MenuNavigation from "./Components/MenuNavigation/MenuNavigation";
-import Pages from "./Pages/Pages";
+import Pages from "./MainPages/MainPages";
 
 const App = () => {
   const [mode, setMode] = useState({ light: false, dark: true });

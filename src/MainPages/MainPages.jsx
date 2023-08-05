@@ -8,7 +8,7 @@ import Skills from "../Components/Skills/Skills";
 import Contact from "../Components/Contact/Contact";
 import NavBar from "../Components/NavBar/NavBar";
 import ProjectsSection from "../Components/ProjectsSection/ProjectsSection";
-import "./Pages.css";
+import "./MainPages.css";
 
 const Pages = () => {
   return (
