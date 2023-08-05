@@ -1,4 +1,4 @@
-import Pages from "./Pages/Pages.jsx";
+
 import "./App.css";
 import themeContext from "./store/store";
 import { useEffect, useState, useContext } from "react";
@@ -7,6 +7,7 @@ import menu1 from "./assets/menu1.svg";
 import menu2 from "./assets/menu2.svg";
 import { SvgLoader, SvgProxy } from "react-svgmt";
 import MenuNavigation from "./Components/MenuNavigation/MenuNavigation";
+import Pages from "./Pages/Pages";
 
 const App = () => {
   const [mode, setMode] = useState({ light: false, dark: true });

@@ -2,8 +2,12 @@ import "./ProjectContainer.css";
 import { useEffect } from "react";
 
 const ProjectContainer = ({ str, path, github, githubLink, white }) => {
-  let spans = str.split(" ").map((el) => {
-    return <span className={"project_tag " + white}>{el}</span>;
+  let spans = str.split(" ").map((el, i) => {
+    return (
+      <span className={"project_tag " + white} key={i}>
+        {el}
+      </span>
+    );
   });
   useEffect(() => {
     const divs = document.querySelectorAll(".project_cont");
