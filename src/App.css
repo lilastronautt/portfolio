@@ -36,3 +36,9 @@
 .thememode_cont:hover .theme_msg {
   display: block;
 }
+
+@media (max-width: 60rem) {
+  .thememode_cont {
+    display: none;
+  }
+}

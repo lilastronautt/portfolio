@@ -10,6 +10,12 @@
   transition: 1500ms;
 }
 
+@media (max-width: 60rem) {
+  .contact_form {
+    width: 90%;
+  }
+}
+
 .contact_form.show {
   opacity: 1;
   transform: translateY(0);
@@ -48,6 +54,13 @@
   color: black;
   padding: 0.5rem 0;
   font-size: 1.2rem;
+}
+
+@media (max-width: 60rem) {
+  .form_input-dark,
+  .form_input-light {
+    font-size: 1rem;
+  }
 }
 
 .form_input-dark:-webkit-autofill {

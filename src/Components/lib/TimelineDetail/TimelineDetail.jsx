@@ -6,14 +6,11 @@ const TimelineDetail = ({ year, degree, institute, activeC, activeB }) => {
   const ctx = useContext(themeContext);
   useEffect(() => {
     const divs = document.querySelectorAll(".timeline_detail_cont");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          entry.target.classList.toggle("show", entry.isIntersecting);
-        });
-      },
-      { threshold: 1 }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
+      });
+    });
     divs.forEach((el) => observer.observe(el));
   }, []);
   return (

@@ -7,6 +7,12 @@
   transition: 1500ms;
 }
 
+@media (max-width: 60rem) {
+  .section_line {
+    width: 80%;
+  }
+}
+
 .section_line.show {
   transform: translateY(0);
   opacity: 1;
