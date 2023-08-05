@@ -6,3 +6,16 @@
   top: 2rem;
   color: white;
 }
+
+@media (max-width: 75rem) {
+  .props {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 60rem) {
+  .props {
+    position: static;
+    width: 100%;
+  }
+}

@@ -8,6 +8,12 @@
   transition: 1500ms;
 }
 
+@media (max-width: 60rem) {
+  .project_cont {
+    width: 90%;
+  }
+}
+
 .project_cont.show {
   opacity: 1;
   transform: translateY(0);

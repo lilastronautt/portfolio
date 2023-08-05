@@ -16,3 +16,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+@media (max-width: 60rem) {
+  .sidenav_cont {
+    display: none;
+  }
+}

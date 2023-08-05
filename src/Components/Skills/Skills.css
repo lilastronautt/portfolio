@@ -1,11 +1,23 @@
 #skills {
-  scroll-margin-top:2rem;
+  scroll-margin-top: 2rem;
 }
-
 
 .skills_container {
   width: 65%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
   align-items: center;
+}
+
+@media (max-width: 71rem) {
+  .skills_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 50rem) {
+  .skills_container {
+    grid-template-columns: 1fr 1fr;
+  }
 }

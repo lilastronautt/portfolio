@@ -10,6 +10,12 @@
   transition: 1500ms;
 }
 
+@media (max-width: 60rem) {
+  .specials_cont {
+    width: 80%;
+  }
+}
+
 .specials_cont.show {
   opacity: 1;
   transform: translateY(0);
@@ -29,6 +35,13 @@
   color: black;
   margin: 0;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 60rem) {
+  .sp_head-dark,
+  .sp_head-light {
+    width: 90%;
+  }
 }
 
 .sp_details {

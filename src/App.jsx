@@ -3,6 +3,7 @@ import "./App.css";
 import themeContext from "./store/store";
 import { useEffect, useState, useContext } from "react";
 import theme from "./assets/theme.svg";
+import video from "./assets/video.mp4";
 import { SvgLoader, SvgProxy } from "react-svgmt";
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     const body = document.getElementById("body");
-    body.style.backgroundColor = mode.dark ? "#1d1c1d" : "white";
+    body.style.backgroundColor = mode.dark ? "rgb(29, 28, 29)" : "white";
   }, [mode]);
 
   const themeModeHandler = () => {

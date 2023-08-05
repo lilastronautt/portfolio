@@ -2,8 +2,14 @@
   width: 50%;
   margin: 2rem 0;
   opacity: 0;
-  transform: translatey(5rem);
+  transform: translateY(5rem);
   transition: 1500ms;
+}
+
+@media (max-width: 60rem) {
+  .sect_heading {
+    width: 90%;
+  }
 }
 
 .sect_heading.show {

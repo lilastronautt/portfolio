@@ -15,6 +15,12 @@
   transition: 1500ms;
 }
 
+@media (max-width: 60rem) {
+  .skill_container {
+    transform: translateX(1rem);
+  }
+}
+
 .skill_container.show {
   opacity: 1;
   transform: translateX(0);
