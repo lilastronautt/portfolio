@@ -3,13 +3,16 @@ import "./App.css";
 import themeContext from "./store/store";
 import { useEffect, useState, useContext } from "react";
 import theme from "./assets/theme.svg";
-import video from "./assets/video.mp4";
+import menu1 from "./assets/menu1.svg";
+import menu2 from "./assets/menu2.svg";
 import { SvgLoader, SvgProxy } from "react-svgmt";
+import MenuNavigation from "./Components/MenuNavigation/MenuNavigation";
 
 const App = () => {
   const [mode, setMode] = useState({ light: false, dark: true });
   const ctx = useContext(themeContext);
   const [msg, setMsg] = useState("switch to light mode");
+  const [menu, showMenu] = useState(false);
 
   useEffect(() => {
     const body = document.getElementById("body");
@@ -30,8 +33,21 @@ const App = () => {
     }
   };
 
+  const showMenuHandler = () => {
+    showMenu((prev) => !prev);
+  };
+
+  const onClickBackdrop = () => {
+    showMenu(() => false);
+  };
+
+  const closeMenu = () => {
+    showMenu(() => false);
+  };
+
   return (
     <themeContext.Provider value={{ light: mode.light, dark: mode.dark }}>
+      {menu && <div onClick={onClickBackdrop} id="backdrop"></div>}
       <div className="thememode_cont" onClick={themeModeHandler}>
         <SvgLoader
           path={theme}
@@ -46,6 +62,12 @@ const App = () => {
         </SvgLoader>
         <div className="theme_msg">{msg}</div>
       </div>
+      <div className="menu_cont" onClick={showMenuHandler}>
+        <SvgLoader path={mode.dark ? menu2 : menu1} className="menu_svg">
+          <SvgProxy />
+        </SvgLoader>
+      </div>
+      {menu && <MenuNavigation closeMenu={closeMenu} />}
       <Pages />
     </themeContext.Provider>
   );

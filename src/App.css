@@ -39,6 +39,44 @@
 
 @media (max-width: 60rem) {
   .thememode_cont {
-    display: none;
+    top: 1rem;
+    right: 2rem;
+  }
+}
+
+.menu_cont {
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  width: 3rem;
+  height: 3rem;
+  display: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.menu_svg {
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem;
+}
+
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+@media (max-width: 60rem) {
+  .menu_cont {
+    display: block;
+  }
+  #backdrop {
+    display: block;
   }
 }

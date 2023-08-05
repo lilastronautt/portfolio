@@ -2,6 +2,12 @@
   scroll-margin-top: 2rem;
 }
 
+@media (max-width: 60rem) {
+  #education {
+    scroll-margin-top: 5rem;
+  }
+}
+
 .timeline_cont {
   width: 40%;
   position: relative;
