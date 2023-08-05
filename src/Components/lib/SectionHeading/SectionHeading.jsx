@@ -21,13 +21,17 @@ const SectionHeading = ({ size, str }) => {
           if (l > 3) {
             if (l - i <= 2) {
               return (
-                <span style={{ color: "#15cf81", fontSize: `${size}rem` }}>
+                <span
+                  style={{ color: "#15cf81", fontSize: `${size}rem` }}
+                  key={i}
+                >
                   {el}{" "}
                 </span>
               );
             } else {
               return (
                 <span
+                  key={i}
                   style={{
                     color: ctx.dark ? "white" : "black",
                     fontSize: `${size}rem`,
@@ -40,7 +44,10 @@ const SectionHeading = ({ size, str }) => {
           } else {
             if (l - i <= 1) {
               return (
-                <span style={{ color: "#15cf81", fontSize: `${size}rem` }}>
+                <span
+                  style={{ color: "#15cf81", fontSize: `${size}rem` }}
+                  key={i}
+                >
                   {el}{" "}
                 </span>
               );
@@ -51,6 +58,7 @@ const SectionHeading = ({ size, str }) => {
                     color: ctx.dark ? "white" : "black",
                     fontSize: `${size}rem`,
                   }}
+                  key={i}
                 >
                   {el}{" "}
                 </span>
