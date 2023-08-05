@@ -46,26 +46,31 @@ const App = () => {
   };
 
   return (
+    // clean this mess up
     <themeContext.Provider value={{ light: mode.light, dark: mode.dark }}>
       {menu && <div onClick={onClickBackdrop} id="backdrop"></div>}
-      <div className="thememode_cont" onClick={themeModeHandler}>
-        <SvgLoader
-          path={theme}
-          fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
-          stroke={ctx.dark ? "white" : "rgba(0,0,0,1)"}
-          className="theme_svg"
-        >
-          <SvgProxy
+      <div
+        className={mode.dark ? "topnavbar_cont-dark" : "topnavbar_cont-light"}
+      >
+        <div className="menu_cont" onClick={showMenuHandler}>
+          <SvgLoader path={mode.dark ? menu2 : menu1} className="menu_svg">
+            <SvgProxy />
+          </SvgLoader>
+        </div>
+        <div className="thememode_cont" onClick={themeModeHandler}>
+          <SvgLoader
+            path={theme}
             fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
             stroke={ctx.dark ? "white" : "rgba(0,0,0,1)"}
-          />
-        </SvgLoader>
-        <div className="theme_msg">{msg}</div>
-      </div>
-      <div className="menu_cont" onClick={showMenuHandler}>
-        <SvgLoader path={mode.dark ? menu2 : menu1} className="menu_svg">
-          <SvgProxy />
-        </SvgLoader>
+            className="theme_svg"
+          >
+            <SvgProxy
+              fill={ctx.dark ? "white" : "rgba(0,0,0,1)"}
+              stroke={ctx.dark ? "white" : "rgba(0,0,0,1)"}
+            />
+          </SvgLoader>
+          <div className="theme_msg">{msg}</div>
+        </div>
       </div>
       {menu && <MenuNavigation closeMenu={closeMenu} />}
       <Pages />
