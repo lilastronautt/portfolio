@@ -70,7 +70,7 @@
 
 .sidesec_img__cont img {
   height: 100%;
-  width: fit-content;
+/*   width: fit-content; */
   background: black;
   border-radius: 12px;
    object-fit:contain;
