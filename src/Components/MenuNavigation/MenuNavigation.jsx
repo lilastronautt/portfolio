@@ -3,7 +3,7 @@ import { SvgLoader, SvgProxy } from "react-svgmt";
 import { useContext } from "react";
 import themeContext from "../../store/store";
 import close from "../../assets/close.svg";
-import MenuNavCont from "../lib/MenuNavCont/menuNavCont";
+import MenuNavCont from "../lib/MenuNavCont/MenuNavCont";
 
 const MenuNavigation = ({ closeMenu }) => {
   const ctx = useContext(themeContext);
