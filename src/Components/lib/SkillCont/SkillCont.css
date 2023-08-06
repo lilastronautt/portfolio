@@ -46,5 +46,6 @@
 
 .skill_container img {
   height: 50%;
-  width: fit-content;
+  width: 100%;
+  object-fit: contain;
 }
