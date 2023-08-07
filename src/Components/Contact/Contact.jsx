@@ -9,6 +9,12 @@ import themeContext from "../../store/store";
 
 const Contact = () => {
   const ctx = useContext(themeContext);
+
+  const [inputs, setInputs] = useState({ name: "", email: "", msg: "" });
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+  const [isSucessFullSentMsg, setSucMsg] = useState(false);
+  const [isErrorSendingMsg, setErrorSendMsg] = useState(false);
+
   useEffect(() => {
     const div = document.querySelector(".contact_form");
     const observer = new IntersectionObserver((entries) => {
@@ -17,9 +23,23 @@ const Contact = () => {
       });
     });
     observer.observe(div);
-  }, []);
 
-  const [inputs, setInputs] = useState({ name: "", email: "", msg: "" });
+    function onlineHandler() {
+      setIsOnline(true);
+    }
+
+    function offlineHandler() {
+      setIsOnline(false);
+    }
+
+    window.addEventListener("online", onlineHandler);
+    window.addEventListener("offline", offlineHandler);
+
+    return () => {
+      window.removeEventListener("online", onlineHandler);
+      window.removeEventListener("offline", offlineHandler);
+    };
+  }, []);
 
   const updName = (e) => {
     setInputs((prev) => {
@@ -37,9 +57,34 @@ const Contact = () => {
     });
   };
 
-  const contactFormhandler = (e) => {
+  const contactFormhandler = async (e) => {
     e.preventDefault();
     console.log(inputs);
+    try {
+      const jsonData = JSON.stringify(inputs);
+      console.log(jsonData);
+      const response = await fetch(
+        "http://localhost/portfoliophpServer/server.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: jsonData,
+        }
+      );
+
+      const data = await response.json();
+      setIsInternet(true);
+      setErrorSendMsg(false);
+      setSucMsg(true);
+    } catch (error) {
+      console.log(error);
+      setErrorSendMsg(true);
+      setIsInternet(true);
+      setSucMsg(false);
+    }
+
     setInputs((prev) => {
       return { name: "", email: "", msg: "" };
     });
@@ -50,6 +95,21 @@ const Contact = () => {
       <SectionInfo name="CONTACT" path={contact} />
       <SectionHeading str="Contact me" size={1.8} />
       <SectionParagraph text="amaanmitadt@gmail.com" />
+      {isOnline || (
+        <div style={{ color: "red", margin: "1rem 0", width: "90%" }}>
+          * Please check your internet connection
+        </div>
+      )}
+      {isSucessFullSentMsg && (
+        <div style={{ color: "green", margin: "1rem 0", width: "90%" }}>
+          * Message send succesfully, Thanks for your time!
+        </div>
+      )}
+      {isErrorSendingMsg && (
+        <div style={{ color: "yellow", margin: "1rem 0", width: "90%" }}>
+          * Message sending problem, if the problem persist please mail on above
+        </div>
+      )}
       <form onSubmit={contactFormhandler} className="contact_form">
         <div className="name_email__cont">
           <div>
