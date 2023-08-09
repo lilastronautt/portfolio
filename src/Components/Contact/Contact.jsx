@@ -64,7 +64,7 @@ const Contact = () => {
     console.log(inputs);
     try {
       const jsonData = JSON.stringify(inputs);
-      console.log(jsonData);
+     
       const response = await fetch(
         "https://amaankhan.net/server.php",
         {
@@ -77,13 +77,13 @@ const Contact = () => {
       );
 
       const data = await response.json();
-      setIsInternet(true);
+      setIsOnline(true);
       setErrorSendMsg(false);
       setSucMsg(true);
     } catch (error) {
-      console.log(error);
+      
       setErrorSendMsg(true);
-      setIsInternet(true);
+      setIsOnline(true);
       setSucMsg(false);
     }
 
