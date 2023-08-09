@@ -30,6 +30,8 @@ const Contact = () => {
 
     function offlineHandler() {
       setIsOnline(false);
+      setSucMsg(false);
+      setErrorSendMsg(false);
     }
 
     window.addEventListener("online", onlineHandler);
@@ -96,17 +98,17 @@ const Contact = () => {
       <SectionHeading str="Contact me" size={1.8} />
       <SectionParagraph text="amaanmitadt@gmail.com" />
       {isOnline || (
-        <div style={{ color: "red", margin: "1rem 0", width: "90%" }}>
+        <div style={{ color: "red", margin: "1rem 0", width: "70%" }}>
           * Please check your internet connection
         </div>
       )}
       {isSucessFullSentMsg && (
-        <div style={{ color: "green", margin: "1rem 0", width: "90%" }}>
+        <div style={{ color: "green", margin: "1rem 0", width: "70%" }}>
           * Message send succesfully, Thanks for your time!
         </div>
       )}
       {isErrorSendingMsg && (
-        <div style={{ color: "yellow", margin: "1rem 0", width: "90%" }}>
+        <div style={{ color: "yellow", margin: "1rem 0", width: "70%" }}>
           * Message sending problem, if the problem persist please mail on above
         </div>
       )}

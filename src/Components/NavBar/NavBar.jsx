@@ -21,7 +21,7 @@ const NavBar = () => {
           name="Specialization"
           id="specialization"
         />
-        <VerticalNavC path={skills} name="Skilss" id="skills" />
+        <VerticalNavC path={skills} name="Skills" id="skills" />
         <VerticalNavC path={projects} name="project" id="projects" />
         <VerticalNavC path={contact} name="Contact" id="contact" />
       </div>

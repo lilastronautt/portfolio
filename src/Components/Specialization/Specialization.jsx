@@ -15,14 +15,14 @@ const Specialization = () => {
       <SectionHeading str="My Specializations" size={1.8} />
       <SpecialContainer
         head="Web Devolpment"
-        details="i created websites using mern as side projects, currently working on mut adt hostel managemnt"
+        details="i created websites using mern as side projects also sometimes php as backend, currently working on mit adt hostel managemnt"
         linkName="GITHUB"
         path={coding}
         link="https://github.com/lilastronautt"
       />
       <SpecialContainer
         head="DSA Solving/Problem Solving"
-        details="I solve regularly solve questions on leetcode for better solving problems"
+        details="I regularly solve questions on leetcode for better problem solving (above 250 questions solved)"
         linkName="LEETCODE"
         path={leetcode2}
         link="https://leetcode.com/amaankhan786/"
