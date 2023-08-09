@@ -66,7 +66,7 @@ const Contact = () => {
       const jsonData = JSON.stringify(inputs);
       console.log(jsonData);
       const response = await fetch(
-        "http://localhost/protfolioBackend/server.php",
+        "https://amaankhan.net/server.php",
         {
           method: "POST",
           headers: {
