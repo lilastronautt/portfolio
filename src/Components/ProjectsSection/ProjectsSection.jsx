@@ -8,6 +8,7 @@ import todo from "../../assets/todo.png";
 import notes from "../../assets/notes.png";
 import chat from "../../assets/chat.png";
 import hostel from "../../assets/hostel.png";
+import blog from "../../assets/blog.png";
 
 const ProjectsSection = () => {
   return (
@@ -15,6 +16,13 @@ const ProjectsSection = () => {
       <SectionInfo name="PORTFOLIO" path={projects} />
       <SectionHeading str={"Featured Projects"} size={1.8} />
       <div className="projects_cont">
+        <ProjectContainer
+          path={blog}
+          github={github}
+          str="React.js CSS HTML SQL AWS"
+          githubLink="https://github.com/lilastronautt/Blog"
+          white="white"
+        />
         <ProjectContainer
           path={todo}
           github={github}

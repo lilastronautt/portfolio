@@ -28,7 +28,6 @@ const Skills = () => {
         <SkillCont skillName="Javascript" path={js} />
         <SkillCont skillName="HTML5" path={html} />
         <SkillCont skillName="CSS" path={css} />
-        <SkillCont skillName="php" path={php} />
         <SkillCont skillName="MongoDb" path={mongodb} />
         <SkillCont skillName="express" path={express} />
         <SkillCont skillName="React" path={react1} />
