@@ -19,7 +19,7 @@ const ProjectsSection = () => {
         <ProjectContainer
           path={blog}
           github={github}
-          str="React.js CSS HTML SQL AWS"
+          str="React.js CSS HTML SQL Express.js AWS"
           githubLink="https://github.com/lilastronautt/Blog"
           white="white"
         />
